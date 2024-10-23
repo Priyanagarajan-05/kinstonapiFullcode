@@ -1,0 +1,55 @@
+.container {
+    max-width: 800px; /* Limit the width of the dashboard */
+    margin: auto; /* Center the dashboard horizontally */
+    padding: 20px; /* Add padding around the dashboard */
+}
+
+.heading {
+    text-align: center; /* Center-align the headings */
+    margin-bottom: 20px; /* Add space below headings */
+}
+
+.welcomeMessage, .professorInfo {
+    margin-bottom: 10px; /* Add space below messages */
+    text-align: center; /* Center-align welcome and info messages */
+}
+
+.buttonContainer {
+    display: flex; /* Use flexbox for button alignment */
+    justify-content: space-between; /* Space buttons evenly */
+    margin-bottom: 20px; /* Add space below the button container */
+}
+
+.moduleContainer {
+    margin-bottom: 20px; /* Add space below each module */
+    padding: 15px; /* Add padding within the module box */
+    background-color: #f9f9f9; /* Light background for modules */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.moduleInput {
+    margin-bottom: 10px; /* Add space below each module input */
+}
+
+.courseItem {
+    margin: 10px 0; /* Add vertical space between course items */
+    padding: 10px; /* Add padding inside course item */
+    border: 1px solid #ccc; /* Light border around each course */
+    border-radius: 5px; /* Rounded corners for course items */
+}
+
+.listHeader {
+    font-weight: bold; /* Bold font for list headers */
+    margin-bottom: 10px; /* Space below list headers */
+}
+
+.successMessage {
+    color: green; /* Green color for success messages */
+    font-weight: bold; /* Bold font for emphasis */
+}
+
+.errorMessage {
+    color: red; /* Red color for error messages */
+    font-weight: bold; /* Bold font for emphasis */
+}

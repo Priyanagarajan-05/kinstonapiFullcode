@@ -1,0 +1,298 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard-container {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+}
+
+.dashboard-heading {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #007bff;
+}
+
+/* Student details section */
+.student-details {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* Allows details to wrap on smaller screens */
+}
+
+.student-detail-item {
+    flex: 1; /* Allows equal space for each item */
+    min-width: 150px; /* Ensures a minimum width for each item */
+    margin: 10px 0; /* Add margin between details for better spacing */
+}
+
+.student-detail-item p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Tabs container */
+.tabs-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.tab-button, .logout-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    background-color: wheat;
+    cursor: pointer;
+    font-size: 16px;
+    flex: 1;
+    text-align: center;
+    margin: 5px;
+}
+
+.tab-button.active {
+    background-color: wheat;
+    color: white;
+}
+
+.logout-button {
+    background-color: #ff4b5c;
+    color: white;
+}
+
+/* Course cards container */
+.course-cards-container {
+    display: grid; /* Use grid layout for equal spacing */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust column count based on available space */
+    gap: 20px; /* Set a consistent gap between the cards */
+    justify-items: center; /* Center the cards horizontally */
+    padding: 0px 70px;
+}
+
+/* Course card styling */
+.course-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    /* Ensures the card takes the full width of the grid cell */
+}
+
+.course-card:hover {
+    transform: scale(1.05);
+    background-color: wheat;
+}
+
+.course-card h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: bolder;
+}
+
+.course-card p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.buy-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: #218838;
+}
+
+/* Completed courses table */
+.completed-courses-table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow-x: auto; /* Enable horizontal scrolling on small screens */
+}
+
+.completed-courses-table th,
+.completed-courses-table td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+.completed-courses-table th {
+    background-color: wheat;
+}
+
+.completed-course-row {
+    background-color: #f9f9f9;
+}
+
+.completed-status {
+    color: green; /* Green color for completed status */
+    font-weight: bold;
+}
+
+/* Generate Certificate Button */
+.generate-certificate-button {
+    background-color: #4CAF50; /* Green background */
+    border: none; /* No border */
+    color: white; /* White text */
+    padding: 10px 15px; /* Padding for size */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Allow for margins */
+    font-size: 16px; /* Text size */
+    margin: 4px 2px; /* Spacing around the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.generate-certificate-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Status message styles */
+.status-message {
+    color: #dc3545; /* Red color for status messages */
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .course-card {
+        width: calc(50% - 20px); /* Two cards per row */
+    }
+
+    .tabs-container {
+        flex-direction: column;
+    }
+
+    .student-details {
+        flex-direction: column;
+    }
+
+    .completed-courses-table {
+        display: block; /* Make table display block on small screens */
+        overflow-x: auto; /* Enable horizontal scrolling */
+        white-space: nowrap; /* Prevent text wrapping */
+    }
+}
+
+@media (max-width: 480px) {
+    .course-card {
+        width: 100%; /* Full width for course cards on smaller screens */
+    }
+
+    .tab-button, .logout-button {
+        width: 100%; /* Full width for buttons */
+    }
+
+    .student-detail-item {
+        width: 100%; /* Full width for student details on smaller screens */
+    }
+
+    .buttonContainer {
+        flex-direction: column;
+    }
+}
+.dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.dashboard-heading {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.student-details {
+    margin-bottom: 20px;
+}
+
+.tabs-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    background-color: wheat;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.tab-button.active {
+    background-color: orange;
+    color: white;
+}
+
+.logout-button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.course-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.course-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+}
+
+.buy-button, .view-course-button, .generate-certificate-button, .next-button, .finish-course-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.buy-button:disabled {
+    background-color: grey;
+}
+
+.module-navigation {
+    margin-top: 20px;
+}
+
+.status-message {
+    margin-top: 20px;
+    color: green;
+}
